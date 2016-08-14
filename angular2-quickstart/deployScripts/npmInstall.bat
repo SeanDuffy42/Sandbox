@@ -1,3 +1,3 @@
 DIR
-CD angular2-quickstart
+CD C:\ProgramData\Amazon\CodeDeploy\%DEPLOYMENT_GROUP_ID%\%DEPLOYMENT_ID%\deployment-archive\angular2-quickstart
 npm install
