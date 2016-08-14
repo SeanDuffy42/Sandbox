@@ -64,5 +64,5 @@ hooks:
 #   in the script specified in "location" starting from the root of the 
 #   revision's file bundle.
 #  BeforeInstall:
-#    - location:angular2-quickstart\deployScripts\npminstall.bat
-#      timeout:300
+    - location:\angular2-quickstart\deployScripts\npminstall.bat
+      timeout:300
