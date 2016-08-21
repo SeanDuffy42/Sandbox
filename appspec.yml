@@ -11,8 +11,8 @@ version: 0.0
 #   instances.
 # Specify "os: windows" if this revision targets Windows Server instances.
 # (You cannot specify both "os: linux" and "os: windows".)
-# os: linux 
-os: windows
+os: linux 
+#os: windows
 # During the Install deployment lifecycle event (which occurs between the 
 #   BeforeInstall and AfterInstall events), copy the specified files 
 #   in "source" starting from the root of the revision's file bundle 
@@ -23,8 +23,8 @@ os: windows
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source: \
-    destination: C:\Sandbox
+  - source: /
+    destination: /var/www/html
 # For deployments to Amazon Linux, Ubuntu Server, or RHEL instances,
 #   you can specify a "permissions" 
 #   section here that describes special permissions to apply to the files 
@@ -39,7 +39,7 @@ files:
 # If you are not running any commands on the Amazon EC2 instance, then remove 
 #   the "hooks" section altogether. A blank or incomplete "hooks" section
 #   may cause associated deployments to fail.
-hooks:
+#hooks:
 # For each deployment lifecycle event, specify multiple "location" entries 
 #   if you want to run multiple scripts during that event.
 # You can specify "timeout" as the number of seconds to wait until failing the deployment 
@@ -63,7 +63,7 @@ hooks:
 # During the ApplicationStop deployment lifecycle event, run the commands 
 #   in the script specified in "location" starting from the root of the 
 #   revision's file bundle.
-  BeforeInstall:
-    - location: \angular2-quickstart\deployScripts\npminstall.bat
-      timeout: 300
+#  BeforeInstall:
+#    - location: \angular2-quickstart\deployScripts\npminstall.bat
+#      timeout: 300
 #touch
