@@ -64,6 +64,6 @@ hooks:
 #   in the script specified in "location" starting from the root of the 
 #   revision's file bundle.
   BeforeInstall:
-    - location: /angular2-quickstart/deployScripts/npminstall.sh
+    - location: /angular2-quickstart/deployScripts/npmInstall.sh
       timeout: 300
 #touch
